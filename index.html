@@ -1,102 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Used Car Search & Inspection</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #00264d;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
-      background-color: white;
-    }
-    h2 {
-      color: #00264d;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      margin-top: 1em;
-      margin-bottom: 0.2em;
-      font-weight: bold;
-    }
-    input, textarea {
-      padding: 0.6em;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      margin-top: 1.5em;
-      padding: 0.8em;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #005fa3;
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      background-color: #f0f0f0;
-    }
-  </style>
+  <title>Car Finder & Inspection Service</title>
+  <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
   <header>
-    <h1>Used Car Search & Inspection Service</h1>
-    <p>We help you find and check the best cars before you buy</p>
+    <div class="overlay">
+      <h1>Find Your Perfect Used Car</h1>
+      <p>Professional vehicle search and on-site inspection services</p>
+      <a href="#form" class="btn">Request Consultation</a>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Personalized car search based on your budget and needs</li>
-      <li>Full vehicle inspection and diagnostic report</li>
-      <li>History check, legal verification, and seller negotiations</li>
-      <li>We work only for the buyer – your interests come first!</li>
-    </ul>
+  <section class="info">
+    <h2>What We Do</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="car-search.jpg" alt="Car Search">
+        <h3>Personal Car Search</h3>
+        <p>We find vehicles that match your preferences and budget.</p>
+      </div>
+      <div class="card">
+        <img src="inspection.jpg" alt="Inspection">
+        <h3>On-Site Inspections</h3>
+        <p>We check the vehicle's condition, history, and documents.</p>
+      </div>
+      <div class="card">
+        <img src="report.jpg" alt="Report">
+        <h3>Detailed Reports</h3>
+        <p>Get a full diagnostic and legal report before you buy.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="form" class="form-section">
     <h2>Request a Free Consultation</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required/>
-
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required/>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="_replyto" required/>
-
-      <label for="message">What kind of car are you looking for?</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
+    <form action="https://formspree.io/f/myzjywyo" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+      <textarea name="message" placeholder="Describe what kind of car you're looking for..." rows="4" required></textarea>
       <button type="submit">Send Request</button>
     </form>
-  </div>
+  </section>
 
   <footer>
-    &copy; 2025 Car Search & Inspection. All rights reserved.
+    &copy; 2025 Car Finder & Inspection. All rights reserved.
   </footer>
 </body>
 </html>
