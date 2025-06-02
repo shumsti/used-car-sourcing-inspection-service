@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Used Car Search & Inspection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #00264d;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      background-color: white;
+    }
+    h2 {
+      color: #00264d;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1em;
+      margin-bottom: 0.2em;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 0.6em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1.5em;
+      padding: 0.8em;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Used Car Search & Inspection Service</h1>
+    <p>We help you find and check the best cars before you buy</p>
+  </header>
+
+  <div class="container">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Personalized car search based on your budget and needs</li>
+      <li>Full vehicle inspection and diagnostic report</li>
+      <li>History check, legal verification, and seller negotiations</li>
+      <li>We work only for the buyer – your interests come first!</li>
+    </ul>
+
+    <h2>Request a Free Consultation</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required/>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required/>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" required/>
+
+      <label for="message">What kind of car are you looking for?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Car Search & Inspection. All rights reserved.
+  </footer>
+</body>
+</html>
